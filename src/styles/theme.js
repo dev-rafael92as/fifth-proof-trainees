@@ -2,10 +2,13 @@ export default {
     FONTS: {
         BACKGROUND_HEADER: '#142159',
         TEXT_COLOR: '#101010',
+        TEXT_HEADER: '#FFFFFF',
+        PRIMARY_LIGHT: '#D0D5EB',
+        BACKGROUND_LOGO: '#F2F2F2',
+        COLOR_BUTTON: '#2E44A1',
 
         DARK_TERTIARY: '#E0E27C',
         
-        LIGHT_PRIMARY: '#D82948',
         INFO_PRODUCT: 'rgba(0, 0, 0, 0.6)',
         LIGHT_SECONDARY: '#042CA6',
         BUTTON_DISABLED: 'rgba(0, 0, 0, 0.1)',
