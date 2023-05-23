@@ -10,6 +10,7 @@ export default {
         DISCOUNT_TAG: '#EB0045',
         SHIPPING_CARD: '#425DC7',
         SHIPPING_INFOS: '#262626',
+        TEXT_TOTALS: '#000000',
 
         DARK_TERTIARY: '#E0E27C',
         

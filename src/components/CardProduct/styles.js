@@ -10,6 +10,7 @@ export const Container = styled.div`
         width: 100%;
         border-radius: 8px;
         background: ${({ theme }) => theme.FONTS.TEXT_HEADER};
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04);
 
         .cardProduct_firstRow {
             width: 100%;

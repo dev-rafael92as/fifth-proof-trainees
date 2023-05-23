@@ -6,12 +6,11 @@ function ContextProvider({ children }) {
 
     const [ products, setProducts] = useState();
     // const [ dataInfosStore, setDataInfosStore ] = useState()
-    // const [ modalIsOpen, setModalIsOpen ] = useState(true);
+    const [ modalIsOpen, setModalIsOpen ] = useState(false);
     // const [ modalContent, setModalContent ] = useState("modal1")
     // const [ isOpenTopBar, setIsOpenTopBar ] = useState(true)
     // const [ noRegionalization, setNoRegionalization ] = useState(true)
     // const [ productsCart, setProductsCart ] = useState([])
-    // const [ miniCartIsOpen, setMiniCartIsOpen ] = useState(false)
 
     return(
         <UseContext.Provider
@@ -20,8 +19,8 @@ function ContextProvider({ children }) {
                 setProducts,
                 // dataInfosStore,
                 // setDataInfosStore,
-                // modalIsOpen, 
-                // setModalIsOpen,
+                modalIsOpen, 
+                setModalIsOpen,
                 // modalContent,
                 // setModalContent,
                 // isOpenTopBar,
@@ -30,8 +29,6 @@ function ContextProvider({ children }) {
                 // setNoRegionalization,
                 // productsCart,
                 // setProductsCart,
-                // miniCartIsOpen,
-                // setMiniCartIsOpen
             }}
         >
             {children}

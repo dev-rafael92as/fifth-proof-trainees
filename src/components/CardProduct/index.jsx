@@ -5,8 +5,11 @@ import { DropdownQuantity } from '../DropdownQuantity'
 import { BsTrash } from 'react-icons/bs'
 import { formatPrice } from '../../utils/formatPrice'
 import { ShippingOptions } from '../ShippingOptions'
+import { ModalGuarantee } from '../ModalGuarantee'
+import { useContextCheckout } from '../../hooks/useContext'
 
 export const CardProduct = (infoProduct) => {
+    const { setModalIsOpen, modalIsOpen } = useContextCheckout()
     const product = infoProduct.infoProduct
     console.log(product)
   return (
@@ -43,7 +46,7 @@ export const CardProduct = (infoProduct) => {
                     </div>
                 </div>
                 <div className='cardProduct_firstRow-guarantee'>
-                    <Button title="Adicionar Garantia Estendida" />
+                    <Button title="Adicionar Garantia Estendida" onClick={() => setModalIsOpen(!modalIsOpen)} />
                     <a href="#"> Ver mais opções</a>
                 </div>
             </div>
@@ -58,6 +61,8 @@ export const CardProduct = (infoProduct) => {
                 </div>
             </div>
         </div>
+
+        <ModalGuarantee />
     </Container>
   )
 }
