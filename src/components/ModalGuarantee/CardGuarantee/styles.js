@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
-    .modal-container-wrapperCards {
-        display: flex;
-    }
+    padding: 32px 40px;
+    max-width: 304px;
 `

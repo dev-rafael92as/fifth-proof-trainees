@@ -5,7 +5,7 @@ const UseContext = createContext({});
 function ContextProvider({ children }) {
 
     const [ products, setProducts] = useState();
-    // const [ dataInfosStore, setDataInfosStore ] = useState()
+    const [ dataGuarantee, setDataGuarantee ] = useState()
     const [ modalIsOpen, setModalIsOpen ] = useState(false);
     // const [ modalContent, setModalContent ] = useState("modal1")
     // const [ isOpenTopBar, setIsOpenTopBar ] = useState(true)
@@ -17,8 +17,8 @@ function ContextProvider({ children }) {
             value={{
                 products,
                 setProducts,
-                // dataInfosStore,
-                // setDataInfosStore,
+                dataGuarantee,
+                setDataGuarantee,
                 modalIsOpen, 
                 setModalIsOpen,
                 // modalContent,

@@ -6,7 +6,6 @@ export const ShippingOptions = (shippingInfos) => {
     const deliveryInfo = shippingInfos.shippingInfos.delivery
     const pickUp = shippingInfos.shippingInfos.pickup
 
-    console.log("deliveryInfo", deliveryInfo)
   return (
     <Container>
         { pickUp &&
