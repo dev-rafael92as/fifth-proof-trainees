@@ -15,4 +15,16 @@ export const Container = styled.div`
             
         }
     }
+
+    .checkout_containerInfos {
+        max-width: 1144px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .checkout_containerCards {
+            width: 100%;
+        }
+    }
 `

@@ -6,6 +6,8 @@ export default {
         PRIMARY_LIGHT: '#D0D5EB',
         BACKGROUND_LOGO: '#F2F2F2',
         COLOR_BUTTON: '#2E44A1',
+        TEXT_CARD_TITLE: '#555555',
+        DISCOUNT_TAG: '#EB0045',
 
         DARK_TERTIARY: '#E0E27C',
         

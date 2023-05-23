@@ -45,10 +45,15 @@ export const CheckoutPage = () => {
                 </div>
             </div>
 
-            <div className='checkout_containerCards'>
-                {orderItens && orderItens.map((item, index) => (
-                    <CardProduct infoProduct={item} key={index}/>
-                ))}
+            <div className='checkout_containerInfos'>
+                <div className='checkout_containerCards'>
+                    {orderItens && orderItens.map((item, index) => (
+                        <CardProduct infoProduct={item} key={index}/>
+                    ))}
+                </div>
+                <div className='checkout_containerTotals'>
+                        Totais
+                </div>
             </div>
         </main>
     </Container>
