@@ -4,6 +4,7 @@ import { Button } from '../Button'
 import { DropdownQuantity } from '../DropdownQuantity'
 import { BsTrash } from 'react-icons/bs'
 import { formatPrice } from '../../utils/formatPrice'
+import { ShippingOptions } from '../ShippingOptions'
 
 export const CardProduct = (infoProduct) => {
     const product = infoProduct.infoProduct
@@ -49,7 +50,11 @@ export const CardProduct = (infoProduct) => {
             <div className='cardProduct_lastRow'>
                 <div className='cardProduct_lastRow-shippingContaier'>
                     <p className='cardProduct_lastRow-shippingContaier-title'>Forma de Entrega</p>
-                    
+                    <ShippingOptions shippingInfos={product.shipping}/>
+                </div>
+                <div className='cardProduct_lastRow-totalsContainer'>
+                    <p>Total</p>
+                    <p className='cardProduct_lastRow-totalsContainer-value'>{formatPrice(product.price)}</p>
                 </div>
             </div>
         </div>

@@ -52,7 +52,29 @@ export const CheckoutPage = () => {
                     ))}
                 </div>
                 <div className='checkout_containerTotals'>
-                        Totais
+                        <div className='container_totals-values'>
+                            <div className='container_totals-values-subtotal'>
+                                <p>Subtotal</p>
+                                <span>R$ 10.986,90</span>
+                            </div>
+                            <div className='container_totals-values-discount'>
+                                <p>Desconto</p>
+                                <span>-R$ 2.069,70</span>
+                            </div>
+                            <div className='container_totals-values-shipping'>
+                                <p>Entrega</p>
+                                <span>R$ 39,80</span>
+                            </div>
+                        </div>
+
+                        <div className='container_totals-Totalvalues'>
+                            <p>Total</p>
+                            <span>R$ 8.876,50</span>
+
+                            <p>em até <strong>10x</strong> de <strong>R$ 887,65</strong></p>
+                        </div>
+
+                        <button className='checkout_containerTotals-addToCart'>Ir para o Pagamento</button>
                 </div>
             </div>
         </main>

@@ -155,7 +155,41 @@ export const Container = styled.div`
         }
 
         .cardProduct_lastRow {
-            display: flex;
+            margin-top: 16px;
+            width: 100%;
+
+            .cardProduct_lastRow-shippingContaier {
+                width: 100%;
+                margin-bottom: 16px;
+
+                .cardProduct_lastRow-shippingContaier-title {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .cardProduct_lastRow-totalsContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                > p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    opacity: 0.6;
+                }
+
+                .cardProduct_lastRow-totalsContainer-value {
+                    opacity: 1;
+                    font-weight: 600;
+                }
+            }
+
         }
     }
 `

@@ -8,6 +8,8 @@ export default {
         COLOR_BUTTON: '#2E44A1',
         TEXT_CARD_TITLE: '#555555',
         DISCOUNT_TAG: '#EB0045',
+        SHIPPING_CARD: '#425DC7',
+        SHIPPING_INFOS: '#262626',
 
         DARK_TERTIARY: '#E0E27C',
         

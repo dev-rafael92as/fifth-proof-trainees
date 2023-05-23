@@ -24,6 +24,7 @@ export const Container = styled.div`
         justify-content: space-between;
 
         .checkout_containerCards {
+            margin-top: 16px;
             width: 100%;
         }
     }
